@@ -4,122 +4,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Canal - Destaques</title>
+    <title>Educação & Tecnologia</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Bem-vindo ao Meu Canal</h1>
-            <p>Explore os melhores conteúdos e vídeos selecionados especialmente para você.</p>
-            <a href="#videos" class="cta-button">Ver Vídeos</a>
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">Carvalho Ribeiro</a>
+            <nav class="nav-links">
+                <a href="#processos">Processos</a>
+                <a href="#ml">Machine Learning</a>
+                <a href="#dados">Dados</a>
+            </nav>
         </div>
     </header>
 
-    <section id="videos" class="carousel-section">
-        <h2>Destaques Recentes</h2>
+    <section class="hero">
+        <h1>Kaizen & Data Science Vídeos</h1>
+        <p>Uma coleção curada de conteúdos sobre tecnologia, ciência e melhoria contínua.</p>
+    </section>
 
-        <div class="carousel-container">
-            <button class="carousel-btn prev" id="prevBtn" aria-label="Anterior">&#10094;</button>
-
-            <div class="carousel-track-container">
-                <ul class="carousel-track">
-                    <!-- Video Card 1 -->
-                    <li class="carousel-slide current-slide">
-                        <div class="video-card">
-                            <div class="video-thumbnail">
-                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bNcy0yBeCdc"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </div>
-                            <div class="video-info">
-                                <h3>Título do Vídeo 1</h3>
-                                <p>Uma breve descrição sobre o conteúdo deste vídeo incrível.</p>
-                                <a href="https://youtu.be/bNcy0yBeCdc?si=oYJ9d--KbxQZ-KfX" class="watch-link">Assistir
-                                    Agora</a>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- Video Card 2 -->
-                    <li class="carousel-slide">
-                        <div class="video-card">
-                            <div class="video-thumbnail">
-                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YPcM3soOWy8"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </div>
-                            <div class="video-info">
-                                <h3>Título do Vídeo 2</h3>
-                                <p>Descubra mais sobre este tópico fascinante neste vídeo.</p>
-                                <a href="https://youtu.be/YPcM3soOWy8?si=FNaVrLTZ4J5Qql8-" class="watch-link">Assistir
-                                    Agora</a>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- Video Card 3 -->
-                    <li class="carousel-slide">
-                        <div class="video-card">
-                            <div class="video-thumbnail">
-                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/HPyTOQXrmgY"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </div>
-                            <div class="video-info">
-                                <h3>Título do Vídeo 3</h3>
-                                <p>Não perca as dicas exclusivas que preparamos para você.</p>
-                                <a href="https://youtu.be/HPyTOQXrmgY?si=fGA5CWWqyUKqjwwZ" class="watch-link">Assistir
-                                    Agora</a>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- Video Card 4 -->
-                    <li class="carousel-slide">
-                        <div class="video-card">
-                            <div class="video-thumbnail">
-                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/eJ4qE3vtQfo"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </div>
-                            <div class="video-info">
-                                <h3>Título do Vídeo 4</h3>
-                                <p>Aprofunde seu conhecimento com este material completo.</p>
-                                <a href="https://youtu.be/eJ4qE3vtQfo?si=MgsV0ecsYBV4VTbb" class="watch-link">Assistir
-                                    Agora</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <button class="carousel-btn next" id="nextBtn" aria-label="Próximo">&#10095;</button>
+    <!-- Tema 1: Melhoria Contínua de Processos -->
+    <section id="processos" class="theme-section">
+        <div class="section-header">
+            <h2>Melhoria Contínua de Processos</h2>
+            <p>Estratégias e metodologias para otimizar fluxos de trabalho.</p>
         </div>
+        <div class="video-grid">
+            <!-- Video 1 -->
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <iframe src="https://www.youtube.com/embed/bNcy0yBeCdc" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Introdução à Melhoria Contínua</h3>
+                    <p>Conceitos fundamentais para transformar processos.</p>
+                    <a href="https://youtu.be/bNcy0yBeCdc" class="watch-link">Assistir no YouTube</a>
+                </div>
+            </div>
+            <!-- Placeholder -->
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <iframe src="https://www.youtube.com/embed/YPcM3soOWy8" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Kaizen na Prática</h3>
+                    <p>Como aplicar pequenas mudanças para grandes resultados.</p>
+                    <a href="https://youtu.be/YPcM3soOWy8" class="watch-link">Assistir no YouTube</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <div class="carousel-nav">
-            <button class="carousel-indicator current-slide"></button>
-            <button class="carousel-indicator"></button>
-            <button class="carousel-indicator"></button>
-            <button class="carousel-indicator"></button>
+    <!-- Tema 2: Modelos Machine Learning e Neural Nets -->
+    <section id="ml" class="theme-section">
+        <div class="section-header">
+            <h2>Machine Learning & Neural Nets</h2>
+            <p>Explorando a fronteira da inteligência artificial.</p>
+        </div>
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <iframe src="https://www.youtube.com/embed/HPyTOQXrmgY" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Redes Neurais Explicadas</h3>
+                    <p>Entenda como as máquinas aprendem padrões complexos.</p>
+                    <a href="https://youtu.be/HPyTOQXrmgY" class="watch-link">Assistir no YouTube</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tema 3: Visualização de Dados -->
+    <section id="dados" class="theme-section">
+        <div class="section-header">
+            <h2>Visualização de Dados</h2>
+            <p>Transformando números em insights visuais claros.</p>
+        </div>
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <iframe src="https://www.youtube.com/embed/eJ4qE3vtQfo" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Storytelling com Dados</h3>
+                    <p>Como contar histórias impactantes usando gráficos.</p>
+                    <a href="https://youtu.be/eJ4qE3vtQfo" class="watch-link">Assistir no YouTube</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tema 4: Tabelas para Pesquisa Científica -->
+    <section id="tabelas" class="theme-section">
+        <div class="section-header">
+            <h2>Tabelas para Pesquisa Científica</h2>
+            <p>Apresentação rigorosa e clara de resultados.</p>
+        </div>
+        <div class="video-grid">
+            <!-- Reusing a video as placeholder -->
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <iframe src="https://www.youtube.com/embed/bNcy0yBeCdc" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Formatação de Tabelas Acadêmicas</h3>
+                    <p>Boas práticas para artigos e teses.</p>
+                    <a href="#" class="watch-link">Assistir no YouTube</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tema 5: Documentos Técnico e Científicos Reproduzíveis -->
+    <section id="docs" class="theme-section">
+        <div class="section-header">
+            <h2>Documentos Reproduzíveis</h2>
+            <p>Ciência aberta e documentação técnica robusta.</p>
+        </div>
+        <div class="video-grid">
+            <!-- Reusing a video as placeholder -->
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <iframe src="https://www.youtube.com/embed/YPcM3soOWy8" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Introdução ao Quarto/RMarkdown</h3>
+                    <p>Criando relatórios dinâmicos e reproduzíveis.</p>
+                    <a href="#" class="watch-link">Assistir no YouTube</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Meu Canal. Todos os direitos reservados.</p>
+        <p>&copy; 2024 EduTech. Todos os direitos reservados.</p>
         <div class="social-links">
             <a href="https://www.youtube.com/carvalhoribeiro">YouTube</a>
             <a href="https://github.com/factorialmap">GitHub</a>
             <a href="https://x.com/factorialmap">X</a>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
